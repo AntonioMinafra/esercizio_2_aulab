@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <!-- link pagine -->
   <link rel="" href="ricetta_brasciole.html">
   <link rel="stylesheet" href="ricetta_prc.html">
@@ -33,16 +34,16 @@
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Valori</a>
+            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Servizi</a>
+            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Stanze</a>
+            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Ricette</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Prenota</a>
+            <a class="nav-link mx-md-3 text-white" aria-current="page" href="#">Contattaci</a>
           </li>
         </ul>
         <form class="mb-3 mb-md-0" role="search">
@@ -58,7 +59,7 @@
     </div>
   </nav>
 
-  <!-- caousel -->
+  <!-- carousel -->
   <div id="carouselExampleCaptions" class="carousel slide ">
     <div class="carousel-indicators">
     </div>
@@ -66,11 +67,48 @@
       <div class="carousel-item position-relative active ">
         <img src="./assets/mathilde-ro-cMMC3Nxc8xI-unsplash.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption my_h5 d-none d-md-block ">
-          <h5 class="display-4 testo_dosis text-danger">Il cibo pugliese</h5>
+          <h5 class="display-2 testo_corsivo">Il cibo pugliese</h5>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- cards -->
+  <div class="container-fluid px-5 my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/orecchiette.jpeg" class=" img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title testo_corsivo">Orechiette e cime di rapa</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="/ricettta_rape.html" class="btn bg-black text-white d-block mx-auto border-0 py-2 px-2 rounded-2 font-dosis">Vai alla ricetta</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/involtini-sugo820x460.png" class=" img-fluid"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title testo_corsivo">Brasciole al sugo</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./ricetta_brasciole.html" class="btn bg-black text-white d-block mx-auto border-0 py-2 px-2 rounded-2 font-dosis">Vai alla ricetta</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/Riso patate e cozze_img.avif" class=" img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title testo_corsivo">Patate riso e cozze</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./ricetta_prc.html" class="btn bg-black text-white d-block mx-auto border-0 py-2 px-2 rounded-2 font-dosis">Vai alla ricetta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -144,6 +182,76 @@
     </div>
   </div>
 
+  <!-- contattaci -->
+  <div id="prenota" class="container-fluid px-5 my-5">
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div class="card border-0 shadow overflow-hidden">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-sm-6 d-none d-sm-block bg-image">
+                <img src="./assets/contatto.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="col-sm-6 p-4">
+                <div class="text-center">
+                  <div class="h3 fw-light ">Contattaci</div>
+                  <p class="mb-4 text-muted font-dosis">Lascia le tue credenziali nel seguente form di contatto, verrai contattato al piu presto</p>
+                </div>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                  <!-- Name Input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                    <label for="name" class="text-secondary small">Inserisci il tuo nome</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                  </div>
+
+                  <!-- Email Input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                    <label for="emailAddress" class="text-secondary small">Inserisci la tua email</label>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                  </div>
+
+                  <!-- Message Input -->
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <label for="message" class="text-secondary small">Lasciaci un messaggio</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                  </div>
+
+                  <!-- Submit success message -->
+                  <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                      <div class="fw-bolder">Form submission successful!</div>
+                      <p>To activate this form, sign up at</p>
+                      <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                  </div>
+
+                  <!-- Submit error message -->
+                  <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <div class="d-grid">
+                    <button class="disabled bg-dark text-white font-dosis border-0 rounded-2 py-3" id="submitButton" type="submit">
+                      Invia adesso
+                    </button>
+                  </div>
+                </form>
+                <!-- End of contact form -->
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="container d-flex justify-content-center text-center ">
     <div class="row">
     </div>

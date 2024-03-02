@@ -58,3 +58,8 @@ body {
 .testo_dosis {
     font-family: "dosis";
 }
+.testo_corsivo {
+    font-family: "Dancing Script", cursive;
+    color: #887154;
+    font-size: 25px;
+}
